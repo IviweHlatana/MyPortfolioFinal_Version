@@ -1,0 +1,24 @@
+/* 
+ * This file contains minimal custom CSS. 
+ * The majority of the styling for this portfolio is handled by the Tailwind CSS framework, 
+ * which is included via a CDN link in the index.html file.
+ * 
+ * Note: Some dynamic features from the original React component (like mobile menu toggle, 
+ * scroll-to-section, and framer-motion animations) have been removed or simplified 
+ * as they require JavaScript to function.
+ */
+
+/* Custom background grid for the hero section */
+.custom-grid-bg {
+    background-image: linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+    background-size: 50px 50px;
+    /* The mask-image property creates a fade-out effect towards the edges */
+    -webkit-mask-image: radial-gradient(ellipse at center, black 50%, transparent 90%);
+    mask-image: radial-gradient(ellipse at center, black 50%, transparent 90%);
+}
+
+/* 
+ * The original code used a utility class for a custom animation:
+ * .animate-gradient-x { animation: gradient-x 3s ease infinite; }
+ * This is defined in the <script> tag in index.html for Tailwind to process.
+ */
